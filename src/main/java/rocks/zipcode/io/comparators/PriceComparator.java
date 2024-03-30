@@ -11,6 +11,6 @@ public class PriceComparator implements Comparator<Item> {
 
     @Override
     public int compare(Item a, Item b) {
-        return (int) (a.getPrice() - b.getPrice());
+        return a.getPrice().compareTo(b.getPrice());
     }
 }

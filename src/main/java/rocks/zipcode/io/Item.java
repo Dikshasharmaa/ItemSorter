@@ -8,6 +8,9 @@ public class Item {
     String name;
     Double price;
     public Item() {
+        this.id = 0L;
+        this.name = "";
+        this.price = 0.01;
     }
 
     public Item(Long id, String name, Double price) {
@@ -39,12 +42,4 @@ public class Item {
     public void setPrice(Double price) {
         this.price = price;
     }
-    public String toString()
-    {
-
-        // Returning attributes of Item
-        return this.id + " " + this.name + " "
-                + this.price;
-    }
-
 }

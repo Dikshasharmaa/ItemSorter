@@ -8,8 +8,9 @@ import java.util.Comparator;
  */
 public class IdComparator  implements Comparator<Item> {
 
+
     @Override
-    public int compare(Item a, Item b) {
-        return (int) (a.getId() - b.getId());
+    public int compare(Item o1, Item o2) {
+        return o1.getId().compareTo(o2.getId());
     }
 }

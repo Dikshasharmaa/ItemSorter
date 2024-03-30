@@ -24,7 +24,7 @@ public class SortByNameTest {
         Comparator<Item> comparator = (Comparator<Item>) new NameComparator();
 
         // when
-        Item[] actual = itemSorter.sort(comparator).toArray(new Item[0]);
+        Item[] actual = itemSorter.sort(comparator);
 
         // then
         Assert.assertArrayEquals(expected, actual);
@@ -42,7 +42,7 @@ public class SortByNameTest {
         Comparator<Item> comparator = (Comparator<Item>) new NameComparator();
 
         // when
-        Item[] actual = itemSorter.sort(comparator).toArray(new Item[0]);
+        Item[] actual = itemSorter.sort(comparator);
 
         // then
         Assert.assertArrayEquals(expected, actual);
@@ -61,7 +61,7 @@ public class SortByNameTest {
         Comparator<Item> comparator = (Comparator<Item>) new NameComparator();
 
         // when
-        Item[] actual = itemSorter.sort(comparator).toArray(new Item[0]);
+        Item[] actual = itemSorter.sort(comparator);
 
         // then
         Assert.assertArrayEquals(expected, actual);
